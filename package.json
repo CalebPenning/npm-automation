@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "tsc": "tsc",
+    "prestart": "echo Running prestart && npm run tsc",
+    "start": "echo Running start && node index.js"
   },
   "keywords": [],
   "author": "",
